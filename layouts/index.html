@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+{{- partial "head.html" . -}}
+<body id="page-top">
+{{- partial "header.html" . -}}
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-start">
+                <div class="d-flex justify-content-start" style="width: 100%;">
+                    <div class="text-left">
+                        {{ with site.Data.homepage.main }}
+                        <h1 class="my-0 text-uppercase header-title">Your complete<br>dental financial<br>team</h1>
+                        <h2 class="text-white-50 mt-2 mb-5">{{ .header.description }}</h2>
+                        <h2 class="text-white-50 mt-2 mb-5">PracticeCFO enables dentists to thrive financially.</h2>
+                        <div class="d-flex justify-content-start gap-3 flex-wrap">
+                            <a class="btn btn-primary" href="{{ .header.button.url }}">{{ .header.button.text }}</a>
+                            <a class="btn btn-primary" style="background: transparent;" href="{{ .header.button.url }}">Our CFO Services</a>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Team -->
+        <section class="team">
+            <div class="container pb-5 pt-5 px-5 px-md-0">
+                <div class="d-lg-flex align-items-center justify-content-between gap-5">
+                    <div class="grow team-flex">
+                        <p class="mb-0 t-m-header">Grow and retain more of your dental practice profits to accelerate your financial independence.</p>
+                        <p class="mb-0 t-desc">Ready to grow your financial success? Scale for success! We can help you work smarter, organize your business and personal finances, and build the life you want.</p>
+                        <button class="btn btn-primary px-0" style="background: transparent; color: blue; box-shadow: none!important;">Pick your CFO team</button>
+                    </div>
+                    <div class="team-flex d-md-flex justify-content-between gap-5 info">
+                        <div class="mb-5 mb-md-0">
+                            <div class="p-team mb-5">
+                                <p class="mb-3 t-header">Your personal team</p>
+                                <p class="mb-0 t-desc">You get your own CFO Advisor and supporting team to oversee the financial planning, tax, and accounting of your financial ecosystem. It will include a lead CFO Advisor, tax planner, accountant, and investment specialist.</p>
+                            </div>
+                            <div class="p-team">
+                                <p class="mb-3 t-header">360 degrees of service</p>
+                                <p class="mb-0 t-desc">When you own a dental practice, the best financial plans are holistic. PracticeCFO integrates your business and personal finances into a single, harmonized strategy designed to achieve your targeted financial outcomes.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="p-team mb-5">
+                                <p class="mb-3 t-header">Industry experts</p>
+                                <p class="mb-0 t-desc">Why work with generalists when you can tap the experience of dental specialists? PracticeCFO is a financial management firm uniquely qualified to help dental practice owners maximize their profitability and overall financial success.</p>
+                            </div>
+                            <div class="p-team">
+                                <p class="mb-3 t-header">Financial peace of mind</p>
+                                <p class="mb-0 t-desc">You want to ensure the longevity of your dental practice and the financial security of your family. PracticeCFO offers practical, purposeful, and profitable financial management, guiding you to financial independence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        {{ with site.Data.homepage.about }}
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="t-header text-center mb-4">{{ .title }}</h2>
+                        <p class="t-desc text-center">{{ .desc }}</p>
+                        {{ if .button.enable }}
+                        <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+                <!-- <img class="img-fluid" src="{{ .image }}" alt="..." /> -->
+            </div>
+        </section>
+        {{ end }}
+        <!-- Projects-->
+        {{ with site.Data.homepage.projects }}
+        <section class=" bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class=" text-lg-left">
+                            <h4 class="t-header">{{ .card1.title }}</h4>
+                            <p class="t-desc text-left mb-0">{{ .card1.text }}</p>
+                            <button class="btn btn-primary px-0" style="background: transparent; color: blue; box-shadow: none!important; text-decoration: underline;">Planning for your financial future</button>
+                        </div>
+                    </div>
+                    <div class=" col-xl-4 col-lg-5"></div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 justify-content-center">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                        <div class="h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="w-100 my-auto text-lg-left">
+                                    <h4 class="t-header text-left">{{ .card2.title }}</h4>
+                                    <p class="mb-0 t-desc">{{ .card2.text }}</p>
+                                    <button class="btn btn-primary px-0" style="background: transparent; color: blue; box-shadow: none!important; text-decoration: underline;">Get CFO support</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="w-100 my-auto text-lg-left">
+                                    <h4 class="t-header">{{ .card3.title }}</h4>
+                                    <p class="mb-0 t-desc">{{ .card3.text }}</p>
+                                    <button class="btn btn-primary px-0" style="background: transparent; color: blue; box-shadow: none!important; text-decoration: underline;">Create a succession plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{ end }}
+        <!-- Signup-->
+        <!-- <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="{{ site.Params.sbtoken }}">
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                            </div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 mt-2 text-white">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                </div>
+                            </div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Contact-->
+        <!-- <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">{{ site.Params.address }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">{{ site.Params.email }}</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">{{ site.Params.phone }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="{{ site.Params.twitter }}"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="{{ site.Params.facebook }}"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="{{ site.Params.github }}"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section> -->
+        <div class="ready">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="w-100">
+                    <img src="assets/img/unsplash1.jpeg" alt="" width="100%" height="auto">
+                </div>
+                <div class="container">
+                    <p class="mb-0">Are you ready to get started with PracticeCFO?</p>
+                    <button class="btn btn-primary">Pick Your CFO Team</button>
+                </div>
+            </div>
+        </div>
+{{- partial "footer.html" . -}}
+</body>
+</html>
