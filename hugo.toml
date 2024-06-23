@@ -6,7 +6,7 @@ theme = 'graysx'
 
 ## Site Settings
 [params]
-logo = "assets/img/logo.webp"
+logo = "assets/img/logo.svg"
 favicon = "assets/favicon.png"
 
 # Info

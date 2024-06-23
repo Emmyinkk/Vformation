@@ -11505,8 +11505,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: purple;
+  border: 1px solid purple;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11587,18 +11587,46 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  /* padding: 15rem 0; */
   background: black;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  overflow: hidden
+}
+#myVideo {
+  position: relative;
+  overflow: hidden;
+  right: 0;
+  /* bottom: 0; */
+  min-width: 100%; 
+  min-height: 100%;
+  overflow: hidden;
+}
+.shade {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+.onTop {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 100%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 .masthead h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
+  color: white;
 }
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
@@ -11606,8 +11634,9 @@ body {
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    color: white;
   }
   
   .t-header, .t-m-header {
@@ -11628,14 +11657,15 @@ body {
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
-    font-size: 4.25rem;
+    font-size: 3.25rem;
+    line-height: 4rem;
     letter-spacing: -1px;
     color: #ffffff;
     font-weight: 600;
   }
   .masthead h2, .masthead .h2 {
     max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 01rem;
   }
   .t-header, .t-m-header {
     font-size: 1.75rem;
@@ -11753,4 +11783,19 @@ body {
 .about-btn {
   margin-top: -50px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .masthead h1, .masthead .h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+  }
+  .masthead h2, .masthead .h2 {
+    font-size: .8rem;
+  }
+  .btn {
+    padding: .75rem .5rem;
+    font-size: 12px;
+  }
 }

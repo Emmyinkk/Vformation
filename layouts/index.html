@@ -5,21 +5,26 @@
 {{- partial "header.html" . -}}
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-start">
-                <div class="d-flex justify-content-start" style="width: 100%;">
-                    <div class="text-left">
-                        {{ with site.Data.homepage.main }}
-                        <h1 class="my-0 text-uppercase header-title">Your complete<br>dental financial<br>team</h1>
-                        <h2 class="text-white-50 mt-2 mb-5">{{ .header.description }}</h2>
-                        <h2 class="text-white-50 mt-2 mb-5">PracticeCFO enables dentists to thrive financially.</h2>
-                        <div class="d-flex justify-content-start gap-3 flex-wrap">
-                            <a class="btn btn-primary" href="{{ .header.button.url }}">{{ .header.button.text }}</a>
-                            <a class="btn btn-primary" style="background: transparent;" href="{{ .header.button.url }}">Our CFO Services</a>
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/img/video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="shade"></div>
+                <div class="container px-4 px-lg-5 d-flex h-100 position-absolute onTop">
+                    <div class="d-flex justify-content-start" style="width: 100%;">
+                        <div class="text-left">
+                            {{ with site.Data.homepage.main }}
+                            <h1 class="my-0 text-uppercase header-title">Your complete<br>dental financial<br>team</h1>
+                            <h2 class="text-white-50 mt-2 mb-4">{{ .header.description }}</h2>
+                            <h2 class="text-white-50 mt-2 mb-4">PracticeCFO enables dentists to thrive financially.</h2>
+                            <div class="d-flex justify-content-start gap-3 flex-wrap">
+                                <a class="btn btn-primary" href="{{ .header.button.url }}">{{ .header.button.text }}</a>
+                                <a class="btn btn-primary" style="background: transparent;" href="{{ .header.button.url }}">Our CFO Services</a>
+                            </div>
+                            {{ end }}
                         </div>
-                        {{ end }}
                     </div>
-                </div>
-            </div>
+              </div>
         </header>
         <!-- Team -->
         <section class="team">
@@ -28,7 +33,7 @@
                     <div class="grow team-flex">
                         <p class="mb-0 t-m-header">Grow and retain more of your dental practice profits to accelerate your financial independence.</p>
                         <p class="mb-0 t-desc">Ready to grow your financial success? Scale for success! We can help you work smarter, organize your business and personal finances, and build the life you want.</p>
-                        <button class="btn btn-primary px-0" style="background: transparent; color: blue; box-shadow: none!important;">Pick your CFO team</button>
+                        <button class="btn btn-primary px-0" style="background: transparent; color: purple; box-shadow: none!important;">Pick your CFO team</button>
                     </div>
                     <div class="team-flex d-md-flex justify-content-between gap-5 info">
                         <div class="mb-5 mb-md-0">
@@ -82,7 +87,7 @@
                         <div class=" text-lg-left">
                             <h4 class="t-header">{{ .card1.title }}</h4>
                             <p class="t-desc text-left mb-0">{{ .card1.text }}</p>
-                            <button class="btn btn-primary px-0" style="background: transparent; color: blue; box-shadow: none!important; text-decoration: underline;">Planning for your financial future</button>
+                            <button class="btn btn-primary px-0" style="background: transparent; color: purple; box-shadow: none!important; text-decoration: underline;">Planning for your financial future</button>
                         </div>
                     </div>
                     <div class=" col-xl-4 col-lg-5"></div>
@@ -96,7 +101,7 @@
                                 <div class="w-100 my-auto text-lg-left">
                                     <h4 class="t-header text-left">{{ .card2.title }}</h4>
                                     <p class="mb-0 t-desc">{{ .card2.text }}</p>
-                                    <button class="btn btn-primary px-0" style="background: transparent; color: blue; box-shadow: none!important; text-decoration: underline;">Get CFO support</button>
+                                    <button class="btn btn-primary px-0" style="background: transparent; color: purple; box-shadow: none!important; text-decoration: underline;">Get CFO support</button>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +116,7 @@
                                 <div class="w-100 my-auto text-lg-left">
                                     <h4 class="t-header">{{ .card3.title }}</h4>
                                     <p class="mb-0 t-desc">{{ .card3.text }}</p>
-                                    <button class="btn btn-primary px-0" style="background: transparent; color: blue; box-shadow: none!important; text-decoration: underline;">Create a succession plan</button>
+                                    <button class="btn btn-primary px-0" style="background: transparent; color: purple; box-shadow: none!important; text-decoration: underline;">Create a succession plan</button>
                                 </div>
                             </div>
                         </div>
