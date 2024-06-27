@@ -119,6 +119,74 @@ body {
   line-height: 1.5;
 }
 
+.card-box {
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  /* width: 80%; */
+  border-radius: 15px;
+}
+
+.theImage {
+  background: url(/assets/img/image1.jpeg);
+  background-color: rgb(247, 245, 253);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.footer .nav-link {
+  color: black;
+  transition: .3s ease-in-out;
+  font-size: 12px;
+}
+.footer .nav-link:hover {
+  color: purple;
+}
+
+.company p {
+  font-weight: 700
+}
+
+@media only screen and (min-width: 768px) {
+  .footer .nav-link {
+    font-size: 16px;
+  }
+}
+
+.person-desc {
+  font-size: 14px!important;
+  max-height: 0px;
+  overflow: hidden;
+  transition: .3s ease-in-out;
+}
+.dropTab {
+  max-height: 300px;
+  overflow: visible;
+  transition: .3s ease-in-out;
+  padding-top: 1rem;
+}
+.nameTag {
+  font-size: 16px;
+  font-weight: 700;
+}
+.positionTag {
+  font-size: 14px;
+  font-weight: 400;
+}
+.tags span {
+  font-size: 12px;
+}
+
+.card-box img {
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -11540,10 +11608,10 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 1);
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -11555,12 +11623,12 @@ body {
     color: #000;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.75);
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: white;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
@@ -11570,6 +11638,7 @@ body {
     outline: none;
     border-bottom: 0.25rem solid blue;
   }
+
 }
 
 .btn {
@@ -11585,8 +11654,8 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
-  min-height: 35rem;
+  height: 100%!important;
+  /* min-height: 35rem; */
   /* padding: 15rem 0; */
   background: black;
   background-position: center;
@@ -11595,31 +11664,40 @@ body {
   background-size: cover;
   overflow: hidden
 }
+.card-layout {
+  padding-top: 35rem;
+}
+.Mteam {
+  padding-top: 8rem;
+}
+
 #myVideo {
   position: relative;
   overflow: hidden;
   right: 0;
   /* bottom: 0; */
   min-width: 100%; 
-  min-height: 100%;
+  /* min-height: 100%; */
   overflow: hidden;
 }
 .shade {
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, .5);
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
+  /* min-height: 100%; */
 }
 .onTop {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   width: 100%;
   padding: 20px;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  height: auto;
 }
 .masthead h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
