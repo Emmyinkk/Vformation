@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+<head>
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-page {
+      padding-top: 8rem;
+    }
+  </style>
+</head>
+<body>
+    {{- partial "header.html" . -}}
+    <div class="container blog-page">
+        <h1>Blog</h1>
+        <div class="row">
+          {{ range .Pages }}
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              {{ if .Params.image }}
+              <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}">
+              {{ end }}
+              <div class="card-body">
+                <h5 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                <p class="card-text">{{ .Date.Format "Jan 2, 2006" }}</p>
+                <p class="card-text">{{ .Plain | truncate 200 }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+      {{- partial "footer.html" . -}}
+    <style>
+        .card-img-top {
+        max-height: 200px;
+        object-fit: cover;
+        }
+
+        .card-title a {
+        text-decoration: none;
+        color: #333;
+        }
+
+        .card-title a:hover {
+        text-decoration: underline;
+        }
+
+        .card-text {
+        margin-bottom: 0.5em;
+        }
+
+        .card-text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 6em;
+        }
+
+        .blog-page {
+        padding-top: 8rem;
+        }
+
+        #mainNav .nav-link {
+            color: black;
+         }
+         #mainNav .nav-link:hover {
+            color: purple;
+         }
+         .theVideo {
+            width: 50%;
+         }
+         #myAbtVideo {
+            width: 100%;
+            max-height: 100%;
+         }
+         .about-content {
+            width: 50%;
+         }
+         .aboutHeader {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #202020;
+            line-height: 1;
+         }
+         .aboutHeader span {
+            color: purple;
+         }
+         .abtText {
+            font-size: 14px!important;
+         }
+         .abtMain {
+            margin-bottom: 8rem;
+         }
+         @media only screen and (max-width: 991px) {
+            .theVideo, .about-content {
+                width: 100%;
+            }
+            .person-desc {
+                font-size: 12px!important;
+            }
+            #mainNav .nav-link {
+                color: rgb(255, 255, 255, 0.75);
+            }
+            #mainNav .nav-link:hover {
+                color: purple;
+            }
+         }
+
+    </style>
+</body>
+</html>

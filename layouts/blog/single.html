@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <style>
+        .single-post {
+            padding-top: 4rem;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+    </style>
+<head>
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body style="padding-top: 8rem;">
+    {{- partial "header.html" . -}}
+    <div class="container">
+        {{ if .Params.image }}
+        <header class="post-header">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" class="post-header-image">
+        </header>
+        {{ end }}
+        
+        <div class="single-post">
+          <article>
+            <h1>{{ .Title }}</h1>
+            <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
+            <div>
+              {{ .Content }}
+            </div>
+          </article>
+        </div>
+      </div>
+
+  {{- partial "footer.html" . -}}
+  <style>
+.post-header-image {
+    max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      width: 30%; /* Adjust this value to make the image smaller */
+}
+
+article {
+  padding: 1em;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+article h1 {
+  margin-top: 0;
+}
+
+article time {
+  color: #666;
+}
+
+#mainNav .nav-link {
+            color: black;
+         }
+         #mainNav .nav-link:hover {
+            color: purple;
+         }
+         .theVideo {
+            width: 50%;
+         }
+         #myAbtVideo {
+            width: 100%;
+            max-height: 100%;
+         }
+         .about-content {
+            width: 50%;
+         }
+         .aboutHeader {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #202020;
+            line-height: 1;
+         }
+         .aboutHeader span {
+            color: purple;
+         }
+         .abtText {
+            font-size: 14px!important;
+         }
+         .abtMain {
+            margin-bottom: 8rem;
+         }
+         @media only screen and (max-width: 991px) {
+            .theVideo, .about-content {
+                width: 100%;
+            }
+            .person-desc {
+                font-size: 12px!important;
+            }
+            #mainNav .nav-link {
+                color: rgb(255, 255, 255, 0.75);
+            }
+            #mainNav .nav-link:hover {
+                color: purple;
+            }
+         }
+
+  </style>
+</body>
+</html>

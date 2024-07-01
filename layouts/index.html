@@ -125,105 +125,160 @@
             </div>
         </section>
         {{ end }}
-        <!-- Signup-->
-        <!-- <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="{{ site.Params.sbtoken }}">
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
+        
+        <div class="container py-2 mt-5" style="width: 90%; max-width: 800px; margin: 0 auto; border: 2px solid rgb(228, 228, 228); height: 500px;">
+            <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.755467 54.6374L0.755025 54.6533C0.755025 65.4042 9.46971 74.119 20.2206 74.119C30.9714 74.119 39.6861 65.4042 39.6861 54.6533C39.6861 43.9025 30.9714 35.1878 20.2206 35.1878C18.8764 35.1878 17.5671 35.3299 16.302 35.5941C19.0659 22.964 25.7664 13.1519 27.6058 9.54396C28.0907 8.59296 28.2625 7.88639 28.2486 7.5168C28.2256 6.90765 27.9572 6.50647 27.6117 6.23591C27.3218 6.00875 26.914 5.8275 26.3332 5.89215C26.0141 5.92772 25.4879 6.0954 24.768 6.5075C23.6598 7.14219 21.7781 8.46898 18.891 10.5887C0.037978 24.4313 0.70794 53.1834 0.755467 54.6374ZM23.409 11.002C20.3744 16.2817 14.955 25.8378 12.9403 37.3936C12.8505 37.9078 13.0392 38.431 13.4361 38.7698C13.833 39.1085 14.3794 39.2126 14.873 39.0433C16.5524 38.4676 18.3463 38.1398 20.2206 38.1398C29.341 38.1398 36.7341 45.5329 36.7341 54.6533C36.7341 63.7738 29.341 71.167 20.2206 71.167C11.1019 71.167 3.71001 63.7767 3.70705 54.6584L3.70794 54.6288C3.70794 54.6093 3.7075 54.5899 3.70676 54.5704C3.68654 54.0607 2.58263 26.2253 20.638 12.9683C21.6353 12.2359 22.5775 11.5726 23.409 11.002Z" fill="purple"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M40.3307 54.6374L40.3302 54.6533C40.3302 65.4042 49.0449 74.119 59.7958 74.119C70.5466 74.119 79.2615 65.4042 79.2615 54.6533C79.2615 43.9025 70.5465 35.1878 59.7956 35.1878C58.4514 35.1878 57.1422 35.3299 55.8771 35.5941C58.6411 22.964 65.3416 13.1519 67.181 9.54396C67.6659 8.59281 67.8376 7.88639 67.8237 7.5168C67.8008 6.90765 67.5323 6.50647 67.1868 6.23577C66.897 6.00875 66.4892 5.8275 65.9084 5.89215C65.5893 5.92772 65.0631 6.0954 64.3432 6.5075C63.235 7.14219 61.3531 8.46898 58.466 10.5887C39.615 24.4302 40.2829 53.1779 40.3307 54.6374ZM62.9843 11.0018C59.9496 16.2817 54.5301 25.8378 52.5153 37.3936C52.4256 37.9076 52.6141 38.4309 53.0111 38.7698C53.408 39.1085 53.9543 39.2126 54.448 39.0434C56.1276 38.4677 57.9212 38.1398 59.7956 38.1398C68.9161 38.1398 76.3094 45.5329 76.3094 54.6533C76.3094 63.7738 68.9162 71.167 59.7958 71.167C50.6771 71.167 43.2852 63.7767 43.2823 54.6584L43.2832 54.6288C43.2832 54.6092 43.2827 54.5896 43.282 54.5699C43.2616 54.0604 42.158 26.2253 60.2131 12.9683C61.2104 12.2359 62.1525 11.5726 62.9843 11.0018Z" fill="purple"></path></svg> </div>
+            <div class="p mb-4 mt-2 text-center clientHeader headingCarousel">What our clients say</div>
+            <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide mt-5 mb-5" data-bs-ride="carousel" >
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" style="max-width: 600px; width: 80%; margin: 0 auto; text-align: center;">
+                    <div class="carousel-item active">
+                        <p class="mb-0">I can’t say enough good things about everyone at PracticeCFO. Everyone on the team is professional, organized, knowledgeable, helpful and kind. They also respond to emails and phone calls immediately and are always happy to help. They have helped me navigate year-to-year as a business owner. PracticeCFO gives me peace of mind that my business is in good hands.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="mb-0">I can’t say enough good things about everyone at PracticeCFO. Everyone on the team is professional, organized, knowledgeable, helpful and kind. They also respond to emails and phone calls immediately and are always happy to help. They have helped me navigate year-to-year as a business owner. PracticeCFO gives me peace of mind that my business is in good hands.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="mb-0">I can’t say enough good things about everyone at PracticeCFO. Everyone on the team is professional, organized, knowledgeable, helpful and kind. They also respond to emails and phone calls immediately and are always happy to help. They have helped me navigate year-to-year as a business owner. PracticeCFO gives me peace of mind that my business is in good hands.</p>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </section> -->
-        <!-- Contact-->
-        <!-- <section class="contact-section bg-black">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">{{ site.Params.address }}</div>
-                            </div>
-                        </div>
+        </div>
+       
+
+
+
+
+          <div class="blog container px-4 px-lg-5">
+            <h2 class="text-center mb-5 pt-5">Latest Blog Posts</h2>
+            <div class="row">
+                {{ range first 3 (where .Site.RegularPages "Type" "blog") }}
+                <div class="col-md-6 mb-4">
+                  <div class="card">
+                    {{ if .Params.image }}
+                    <a href="{{ .Permalink }}"><img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}"></a>
+                    {{ end }}
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                      <p class="card-text">{{ .Date.Format "Jan 2, 2006" }}</p>
+                      <p class="card-text">{{ .Plain | truncate 200 }}</p>
                     </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">{{ site.Params.email }}</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">{{ site.Params.phone }}</div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="{{ site.Params.twitter }}"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="{{ site.Params.facebook }}"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="{{ site.Params.github }}"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </section> -->
-        <div id="carouselExampleAutoplaying" class="carousel slide mt-5 mb-5" data-bs-ride="carousel" style="width: 80%; max-width: 500px; margin: 0 auto;">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1505533321630-975218a5f66f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+                {{ end }}
               </div>
-              <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         <div class="ready">
             <div class="d-flex align-items-center justify-content-between">
-                <div class="w-100">
+                <div class="w-100 d-none d-md-block">
                     <img src="assets/img/unsplash1.jpeg" alt="" width="100%" height="auto">
                 </div>
                 <div class="container">
-                    <p class="mb-0">Are you ready to get started with PracticeCFO?</p>
-                    <button class="btn btn-primary">Pick Your CFO Team</button>
+                    <p class="mb-2 ready">Are you ready to get started with PracticeCFO?</p>
+                    <button class="btn btn-primary" style="font-size: 14px">Pick Your CFO Team</button>
                 </div>
             </div>
         </div>
 {{- partial "footer.html" . -}}
+
+
+
+<style>
+    ul.latest-posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.latest-posts li {
+  margin-bottom: 1em;
+}
+
+ul.latest-posts a {
+  font-size: 1.2em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+ul.latest-posts a:hover {
+  text-decoration: underline;
+}
+
+ul.latest-posts p {
+  margin: 0.5em 0 0;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: purple;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.card-text {
+  margin-bottom: 0.5em;
+}
+
+.carousel-indicators {
+    bottom: -150px;
+}
+
+.headingCarousel, .ready {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.ready {
+    width: 100%;
+    line-height: 40px;
+    font-weight: 500;
+    /* max-width: 200px; */
+}
+
+@media (max-width: 991px) {
+    .headingCarousel, .ready {
+        font-size: 1.75rem;
+    }
+    .carousel-indicators {
+        bottom: -80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ready {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .carousel-item {
+        font-size: 14px;
+    }
+
+    
+}
+
+</style>
 </body>
 </html>
