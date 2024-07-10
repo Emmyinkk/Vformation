@@ -4,7 +4,7 @@ main:
     title : "Your complete dental financial team" # Title Text
     description : "Simplify your financial freedom. Work with an integrated team of best-in-class advisors, led by your own personal CFO, who get to know you and your dental practice like it was their own." # Title Desc
     button:
-      text: "Pick Your CFO Team" # Button Text
+      text: "Our Services" # Button Text
       url: "#about" # Button URL
 
 
