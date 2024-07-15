@@ -1,8 +1,8 @@
 # Main Title
 main:
   header:
-    title : "Your complete dental financial team" # Title Text
-    description : "Simplify your financial freedom. Work with an integrated team of best-in-class advisors, led by your own personal CFO, who get to know you and your dental practice like it was their own." # Title Desc
+    title : "V FORMATION" # Title Text
+    description : "At V Formation Consulting, we specialize in providing funding to help startups get off the ground, solve critical problems, and scale their businesses." # Title Desc
     button:
       text: "Our Services" # Button Text
       url: "#about" # Button URL

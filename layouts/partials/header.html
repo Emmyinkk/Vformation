@@ -1,6 +1,6 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container p-0">
+    <div class="container px-lg-0 px-3">
         <a class="navbar-brand" href="/"><img src="/assets/img/logo.svg" width="150px" height="auto"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
@@ -34,8 +34,17 @@
                       <li><a class="dropdown-item" href="/">Branding</a></li>
                   </ul>
                 </li>
-                <li class="nav-items"><a href="/" class="nav-link">Portfolio</a></li>
-                <li class="nav-items"><a href="/blog/" class="nav-link">Blog</a></li>
+                <li class="nav-item dropdown ">
+                  <button class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" style="background: transparent; border: none;">
+                    Resources
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-light">
+                      <li><a class="dropdown-item" href="/">Portfolio</a></li>
+                      <li><a class="dropdown-item" href="/blog/">Blog/Podcast</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-items"><a href="/" class="nav-link">Portfolio</a></li>
+                <li class="nav-items"><a href="/blog/" class="nav-link">Blog/Podcast</a></li> -->
                 <li class="nav-items"><a href="" class="nav-link">Contact us</a></li>
                 <li class="nav-items d-flex flex-column justify-content-center align-items-lg-center align-items-start"><a href="" class="nav-link d-flex flex-column justify-content-center align-items-lg-center py-3 px-4 rounded-2 login" style="background: purple; height: 20px;">Log in</a></li>
             </ul>
