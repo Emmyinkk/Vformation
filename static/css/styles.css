@@ -125,6 +125,13 @@ body {
   border-radius: 15px;
 }
 
+.dashed {
+  width: 100%;
+  height: 1px;
+  margin: 3rem 0;
+  background: #DADADA;
+}
+
 .theImage {
   background: url(/assets/img/image1.jpeg);
   background-color: rgb(247, 245, 253);

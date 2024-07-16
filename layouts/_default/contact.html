@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+<body>
+    {{- partial "header.html" . -}}
+
+    <div class="contact container pt-4" style="margin-top: 8rem;">
+        <div class="d-flex justify-content-between flex-column flex-md-row gap-5">
+            <div class="main-contact">
+                <h2 class="mb-3">We would love to hear from you</h2>
+                <p class="mb-3">Are you ready to engage a CFO advisor and accelerate your journey to financial independence? We can help with proven strategies designed specifically for dental practices. Contact us today!</p>
+                <form action="">
+                    <div class="mb-2">
+                        <p class="mb-1">Name <span style="color: red">*</span></p>
+                        <input type="text" name="name" id="name" class="rounded-2 p-2">
+                    </div>
+                    <div class="mb-2">
+                        <p class="mb-1">Email Address <span style="color: red">*</span></p>
+                        <input type="email" name="email" id="email" class="rounded-2 p-2">
+                    </div>
+                </form>
+            </div>
+            <div class="right-side">
+                <h2 class="mb-3">We would love to hear from you</h2>
+                <p class="mb-2">Are you ready to engage a CFO advisor and accelerate your journey to financial independence? We can help with proven strategies designed specifically for dental practices. Contact us today!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container position-relative pt-4 carouselMain" style="width: 90%; max-width: 800px; margin: 0 auto; border: 2px solid rgb(228, 228, 228);">
+        <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.755467 54.6374L0.755025 54.6533C0.755025 65.4042 9.46971 74.119 20.2206 74.119C30.9714 74.119 39.6861 65.4042 39.6861 54.6533C39.6861 43.9025 30.9714 35.1878 20.2206 35.1878C18.8764 35.1878 17.5671 35.3299 16.302 35.5941C19.0659 22.964 25.7664 13.1519 27.6058 9.54396C28.0907 8.59296 28.2625 7.88639 28.2486 7.5168C28.2256 6.90765 27.9572 6.50647 27.6117 6.23591C27.3218 6.00875 26.914 5.8275 26.3332 5.89215C26.0141 5.92772 25.4879 6.0954 24.768 6.5075C23.6598 7.14219 21.7781 8.46898 18.891 10.5887C0.037978 24.4313 0.70794 53.1834 0.755467 54.6374ZM23.409 11.002C20.3744 16.2817 14.955 25.8378 12.9403 37.3936C12.8505 37.9078 13.0392 38.431 13.4361 38.7698C13.833 39.1085 14.3794 39.2126 14.873 39.0433C16.5524 38.4676 18.3463 38.1398 20.2206 38.1398C29.341 38.1398 36.7341 45.5329 36.7341 54.6533C36.7341 63.7738 29.341 71.167 20.2206 71.167C11.1019 71.167 3.71001 63.7767 3.70705 54.6584L3.70794 54.6288C3.70794 54.6093 3.7075 54.5899 3.70676 54.5704C3.68654 54.0607 2.58263 26.2253 20.638 12.9683C21.6353 12.2359 22.5775 11.5726 23.409 11.002Z" fill="purple"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M40.3307 54.6374L40.3302 54.6533C40.3302 65.4042 49.0449 74.119 59.7958 74.119C70.5466 74.119 79.2615 65.4042 79.2615 54.6533C79.2615 43.9025 70.5465 35.1878 59.7956 35.1878C58.4514 35.1878 57.1422 35.3299 55.8771 35.5941C58.6411 22.964 65.3416 13.1519 67.181 9.54396C67.6659 8.59281 67.8376 7.88639 67.8237 7.5168C67.8008 6.90765 67.5323 6.50647 67.1868 6.23577C66.897 6.00875 66.4892 5.8275 65.9084 5.89215C65.5893 5.92772 65.0631 6.0954 64.3432 6.5075C63.235 7.14219 61.3531 8.46898 58.466 10.5887C39.615 24.4302 40.2829 53.1779 40.3307 54.6374ZM62.9843 11.0018C59.9496 16.2817 54.5301 25.8378 52.5153 37.3936C52.4256 37.9076 52.6141 38.4309 53.0111 38.7698C53.408 39.1085 53.9543 39.2126 54.448 39.0434C56.1276 38.4677 57.9212 38.1398 59.7956 38.1398C68.9161 38.1398 76.3094 45.5329 76.3094 54.6533C76.3094 63.7738 68.9162 71.167 59.7958 71.167C50.6771 71.167 43.2852 63.7767 43.2823 54.6584L43.2832 54.6288C43.2832 54.6092 43.2827 54.5896 43.282 54.5699C43.2616 54.0604 42.158 26.2253 60.2131 12.9683C61.2104 12.2359 62.1525 11.5726 62.9843 11.0018Z" fill="purple"></path></svg> </div>
+        <div class="p mb-4 mt-2 text-center clientHeader headingCarousel">What our clients say</div>
+        <div id="carouselExampleAutoplaying" class="carousel position-static carousel-dark slide mt-5 mb-5" data-bs-ride="carousel" >
+            <div class="carousel-inner position-static" style="max-width: 600px; width: 80%; margin: 0 auto;">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-start text-right mb-2">
+                        <p class="mb-0" style="font-size: 12px; color: purple"><span style="font-weight: 500; font-size: 16px">Dr. Jan-Jaap Reinders:</span><br>
+
+                            Association Board Member<br>
+                            January 19, 2023, <br>
+                            Dr. Jan-Jaap worked with Dr. Charles Drury but they were at different companies.</p>
+                    </div>
+                    <p class="mb-0 carouselText">Dr Charles Drury is an inspiring leader with interesting ideas, high emotional intelligence and a strong 
+                        fascination for social and positive innovations. He has the ability to convey ideas by expressing them in a way he really 
+                        captures their essence. This ability is based on his deeper understanding of what relevance abstract concepts can have for 
+                        the reality of daily practice. This, together with his capacity to see the strategic value of innovations, Dr Drury is a 
+                        valuable consultant and change agent and a motivating personality to collaborate with.
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-start text-right mb-2">
+                        <p class="mb-0" style="font-size: 12px; color: purple"><span style="font-weight: 500; font-size: 16px">Kianor Shah:</span><br>
+
+                            DMD, MBA, Dentist, Entrepreneur, Visionary.<br>
+                            September 18, 2022, <br>
+                            Kianor worked with Dr. Charles Drury but on different teams.</p>
+                    </div>
+                    <p class="mb-0 carouselText">Dr. Drury, in simple words, is a force of nature. He is not only a skilled and knowledgeable dentist but 
+                        also an entrepreneur of sorts. He is always eager to improve methods and create more and more innovations of value. 
+                        Easy going and effective. It has been an honor to work with him and collaborating on a host of projects.
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <p class="mb-0 carouselText">I can’t say enough good things about everyone at PracticeCFO. Everyone on the team is professional, organized, knowledgeable, helpful and kind. They also respond to emails and phone calls immediately and are always happy to help. They have helped me navigate year-to-year as a business owner. PracticeCFO gives me peace of mind that my business is in good hands.</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </div>
+
+    {{- partial "footer.html" . -}}
+
+
+
+    <style>
+        #mainNav .nav-link {
+           color: black;
+        }
+        #mainNav .login {
+           color: rgb(255, 255, 255, 0.75);
+        }
+        #mainNav .nav-link:hover {
+           color: purple;
+        }
+        .theVideo {
+           width: 50%;
+        }
+        #myAbtVideo {
+           width: 100%;
+           max-height: 100%;
+        }
+        .about-content {
+           width: 50%;
+        }
+        .aboutHeader {
+           font-size: 2rem;
+           font-weight: 600;
+           color: #202020;
+           line-height: 1;
+        }
+        .aboutHeader span {
+           color: purple;
+        }
+        .abtText {
+           font-size: 14px!important;
+        }
+        .abtMain {
+           margin-bottom: 8rem;
+        }
+        input {
+            width: 100%;
+            border: 1px solid #DADADA;
+            outline: none;
+            transition: .3s ease-in-out;
+        }
+        input:focus {
+            border: 1px solid purple;
+        }
+        .carouselMain {
+            height: 600px;
+            margin-top: 5rem!important;
+        }
+        @media only screen and (max-width: 991px) {
+           .theVideo, .about-content {
+               width: 100%;
+           }
+           .person-desc {
+               font-size: 12px!important;
+           }
+           #mainNav .nav-link {
+               color: rgb(255, 255, 255, 0.75);
+           }
+           #mainNav .nav-link:hover {
+               color: purple;
+           }
+           .headingCarousel, .ready {
+                font-size: 1.75rem;
+            }
+            .carousel-indicators {
+                bottom: -80px;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .carousel-item {
+                font-size: 14px;
+            }
+            .carouselText {
+                font-size: 14px;
+            }
+            .carouselMain {
+                height: auto;
+            }
+
+            
+        }
+   </style>
+</body>
+    
+</html>

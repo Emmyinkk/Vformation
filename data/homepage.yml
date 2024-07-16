@@ -5,7 +5,7 @@ main:
     description : "At V Formation Consulting, we specialize in providing funding to help startups get off the ground, solve critical problems, and scale their businesses." # Title Desc
     button:
       text: "Our Services" # Button Text
-      url: "#about" # Button URL
+      url: "/services/" # Button URL
 
 
 # About
