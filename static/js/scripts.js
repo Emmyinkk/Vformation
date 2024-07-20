@@ -16,14 +16,13 @@ window.addEventListener('DOMContentLoaded', event => {
             return;
         }
         if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
+            navbarCollapsible.classList.remove('navbar-shrink');
         } else {
-            navbarCollapsible.classList.add('navbar-shrink')
+            navbarCollapsible.classList.add('navbar-shrink');
         }
-
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -36,13 +35,14 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             offset: 74,
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
+        document.querySelectorAll('#navbarResponsive .nav-link:not(.dropdown-toggle)')
     );
+
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
@@ -51,17 +51,14 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-});
-
-document.querySelectorAll('.clickable-div').forEach(div => {
-    div.addEventListener('click', () => {
-        const targetId = div.getAttribute('data-target');
-        document.querySelectorAll('.person-desc').forEach(hiddenDiv => {
-            if (hiddenDiv.id === targetId) {
-                hiddenDiv.classList.toggle('dropTab');
-            } else {
-                hiddenDiv.classList.remove('dropTab');
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function (event) {
+        if (window.innerWidth < 992) {
+            if (!event.target.closest('.dropdown-menu') && !event.target.closest('.dropdown-toggle')) {
+                document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+                    menu.classList.remove('show');
+                });
             }
-        });
+        }
     });
 });
