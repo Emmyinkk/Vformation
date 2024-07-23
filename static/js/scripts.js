@@ -62,3 +62,16 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     });
 });
+
+document.querySelectorAll('.clickable-div').forEach(div => {
+    div.addEventListener('click', () => {
+        const targetId = div.getAttribute('data-target');
+        document.querySelectorAll('.person-desc').forEach(hiddenDiv => {
+            if (hiddenDiv.id === targetId) {
+                hiddenDiv.classList.toggle('dropTab');
+            } else {
+                hiddenDiv.classList.remove('dropTab');
+            }
+        });
+    });
+});
