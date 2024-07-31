@@ -15,14 +15,19 @@ about:
 
 projects:
   card1:
-    title: "Investments for your future"
+    title: "Funding"
     text: "The revenue your dental practice generates shouldn’t be your only source of income. Put your money to work for you. PracticeCFO can develop an investment plan as part of a comprehensive financial blueprint. We’ll map out a holistic investing strategy to help you become financially independent earlier in life."
     img: "assets/img/bg-masthead.jpg"
   card2:
-    title: "Complete CFO services"
+    title: "Connection"
     text: "A dental practice is a business with unique financial challenges that call for skilled expertise. Yet as a dentist, nearly all of your training was focused on dental treatments. PracticeCFO can take much of the financial decision-making burden off your plate, giving you more time to see patients and enjoy your life."
   card3:
-    title: "Help with business transitions"
+    title: "Strategic Guidance"
+    text: "You’ve worked hard to build your dental practice and want to ensure its longevity as well as provide stability for your employees and patients. Transferring ownership, whether to a family member or buyer, is complicated. PracticeCFO can craft a succession plan that ensures a smooth transition and satisfies all stakeholders."
+  card4:
+    title: "Market Analysis"
+    text: "You’ve worked hard to build your dental practice and want to ensure its longevity as well as provide stability for your employees and patients. Transferring ownership, whether to a family member or buyer, is complicated. PracticeCFO can craft a succession plan that ensures a smooth transition and satisfies all stakeholders."
+  card5:
+    title: "Branding"
     text: "You’ve worked hard to build your dental practice and want to ensure its longevity as well as provide stability for your employees and patients. Transferring ownership, whether to a family member or buyer, is complicated. PracticeCFO can craft a succession plan that ensures a smooth transition and satisfies all stakeholders.
-
 Additionally, PracticeCFO can guide you through the acquisition process of buying a dental practice. We’ve helped hundreds of dentists do just that. We also have an excellent financial training program for dental associates aspiring to be practice owners at www.associatesonfire.com."

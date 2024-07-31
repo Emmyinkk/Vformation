@@ -41,10 +41,10 @@
     {{ with site.Data.homepage.about }}
         <section class="about-section text-left mt-5 pt-4" id="about">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-start">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="t-header text-left mb-4">{{ .title }}</h2>
-                        <p class="t-desc text-left">{{ .desc }}</p>
+                        <h2 class="t-header text-center mb-4">{{ .title }}</h2>
+                        <p class="t-desc text-center">{{ .desc }}</p>
                         {{ if .button.enable }}
                         <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
                         {{ end }}
@@ -58,7 +58,7 @@
     <section class=" mt-5 pt-4" id="projects">
         <div class="container px-4 px-lg-5" style="background: none;">
             <!-- Featured Project Row-->
-            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center pt-3" id="funding">
                 <div class="col-xl-5 col-lg-5">
                     <div class=" text-lg-left">
                         <h4 class="t-header">{{ .card1.title }}</h4>
@@ -69,14 +69,14 @@
                 <div class=" col-xl-4 col-lg-5"></div>
             </div>
             <!-- Project One Row-->
-            <div class="row gx-0 mb-5 justify-content-start">
-                <!-- <div class="col-lg-6"></div> -->
+            <div class="row gx-0 mb-5 justify-content-between pt-3" id="connection">
+                <div class="col-lg-6"></div>
                 <div class="col-lg-6">
                     <div class="h-100 project">
                         <div class="d-flex h-100">
-                            <div class="w-100 my-auto text-lg-left">
-                                <h4 class="t-header text-left">{{ .card2.title }}</h4>
-                                <p class="mb-0 t-desc">{{ .card2.text }}</p>
+                            <div class="w-100 my-auto text-end">
+                                <h4 class="t-header text-end">{{ .card2.title }}</h4>
+                                <p class="mb-0 t-desc text-end">{{ .card2.text }}</p>
                                 <button class="btn btn-primary px-0" style="background: transparent; color: purple; box-shadow: none!important; text-decoration: underline;">Get CFO support</button>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <!-- Project Two Row-->
-            <div class="row gx-0 justify-content-center">
+            <div class="row gx-0 justify-content-center pt-3" id="guidance">
                 <div class="col-lg-6"></div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="h-100 project">
@@ -92,6 +92,36 @@
                             <div class="w-100 my-auto text-lg-left">
                                 <h4 class="t-header">{{ .card3.title }}</h4>
                                 <p class="mb-0 t-desc">{{ .card3.text }}</p>
+                                <button class="btn btn-primary px-0" style="background: transparent; color: purple; box-shadow: none!important; text-decoration: underline;">Create a succession plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project One Row-->
+            <div class="row gx-0 mb-5 justify-content-between pt-3" id="analysis">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6">
+                    <div class="h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="w-100 my-auto text-end">
+                                <h4 class="t-header text-end">{{ .card4.title }}</h4>
+                                <p class="mb-0 t-desc text-end">{{ .card4.text }}</p>
+                                <button class="btn btn-primary px-0" style="background: transparent; color: purple; box-shadow: none!important; text-decoration: underline;">Get CFO support</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row-->
+            <div class="row gx-0 justify-content-center pt-3" id="branding">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="w-100 my-auto text-lg-left">
+                                <h4 class="t-header">{{ .card5.title }}</h4>
+                                <p class="mb-0 t-desc">{{ .card5.text }}</p>
                                 <button class="btn btn-primary px-0" style="background: transparent; color: purple; box-shadow: none!important; text-decoration: underline;">Create a succession plan</button>
                             </div>
                         </div>
