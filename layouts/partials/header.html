@@ -17,7 +17,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         About us
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdownAbout">
+                    <ul class="dropdown-menu dropdown-menu-light blacked" aria-labelledby="navbarDropdownAbout">
                         <li><a class="dropdown-item" href="/about/">About Vformation</a></li>
                       <li><a class="dropdown-item" href="/about/#meet">Meet the team</a></li>
                     </ul>
@@ -26,7 +26,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdownServices">
+                  <ul class="dropdown-menu dropdown-menu-light blacked" aria-labelledby="navbarDropdownServices">
                       <li><a class="dropdown-item" href="/services/#funding">Funding</a></li>
                       <li><a class="dropdown-item" href="/services/#connection">Connection</a></li>
                       <li><a class="dropdown-item" href="/services/#guidance">Stragetic guidance</a></li>
@@ -34,7 +34,7 @@
                       <li><a class="dropdown-item" href="/services/#branding">Branding</a></li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Resources
                   </a>
@@ -42,11 +42,31 @@
                       <li><a class="dropdown-item" href="/">Portfolio</a></li>
                       <li><a class="dropdown-item" href="/blog/">Blog/Podcast</a></li>
                   </ul>
-                </li>
+                </li> -->
                 <!-- <li class="nav-items"><a href="/" class="nav-link">Portfolio</a></li>
                 <li class="nav-items"><a href="/blog/" class="nav-link">Blog/Podcast</a></li> -->
+                <li class="nav-items"><a href="/blog/" class="nav-link">Blog/Podcast</a></li>
                 <li class="nav-items"><a href="/contact/" class="nav-link">Contact us</a></li>
-                <li class="nav-items d-flex flex-column justify-content-center align-items-lg-center align-items-start"><a href="/login/" class="nav-link d-flex flex-column justify-content-center align-items-lg-center py-3 px-4 rounded-2 login" style="background: purple; height: 20px;">Log in</a></li>
+                <li class="nav-items d-flex flex-column justify-content-center align-items-lg-center align-items-start"><a href="/login/" class="nav-link d-flex flex-column justify-content-center align-items-lg-center py-3 px-4 rounded-2 login" style="background: rgb(192, 28, 192); height: 20px;">Log in</a></li>
             </ul>
     </div>
 </nav>
+
+<style>
+  #mainNav {
+    background: purple;
+  }
+  .dropdown-item:hover {
+      color: white;
+      background: purple;
+    }
+  @media only screen and (max-width: 991px) {
+    #mainNav {
+      background: black;
+    }
+    
+    .blacked {
+      background: black!important;
+    }
+  }
+</style>
