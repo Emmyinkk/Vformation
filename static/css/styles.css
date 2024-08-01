@@ -11673,7 +11673,7 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: 100%!important;
+  height: 100vh!important;
   /* min-height: 35rem; */
   /* padding: 15rem 0; */
   background: black;
@@ -11681,7 +11681,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  overflow: hidden
+  overflow: hidden;
 }
 .card-layout {
   padding-top: 35rem;
@@ -11691,13 +11691,15 @@ body {
 }
 
 #myVideo {
-  position: relative;
-  overflow: hidden;
-  right: 0;
-  /* bottom: 0; */
-  min-width: 100%; 
-  /* min-height: 100%; */
-  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
 }
 .shade {
   position: absolute;
